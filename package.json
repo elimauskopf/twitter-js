@@ -10,11 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/ev-dev/twitter-js.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ev-dev/twitter-js/issues"
-  },
-  "homepage": "https://github.com/ev-dev/twitter-js#readme"
+  "homepage": "https://github.com/ev-dev/twitter-js#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
