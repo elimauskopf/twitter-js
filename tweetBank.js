@@ -1,9 +1,10 @@
 const _ = require('lodash')
+const randomPuppy = require('random-puppy');
 
 let data = [];
 
-function add(name, content) {
-    data.push({ name: name, content: content });
+function add(name, content, pic) {
+    data.push({ name: name, content: content, image: pic });
 }
 
 function list() {
@@ -16,6 +17,9 @@ function find(properties) {
 
 module.exports = { add: add, list: list, find: find };
 
+const getImg = function() {
+    randomPuppy().then(url => url);
+}
 
 const randArrayEl = function (arr) {
     return arr[Math.floor(Math.random() * arr.length)];
@@ -33,6 +37,6 @@ const getFakeTweet = function () {
 };
 
 for (let i = 0; i < 10; i++) {
-    module.exports.add(getFakeName(), getFakeTweet());
+    module.exports.add(getFakeName(), getFakeTweet(), getImg());
 }
 

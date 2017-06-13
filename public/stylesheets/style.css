@@ -66,5 +66,5 @@ code {
 }
 
 .tweet-list {
-    
+    list-style-type: none;
 }
