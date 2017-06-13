@@ -3,9 +3,13 @@ const chalk = require('chalk');
 const volleyball = require('volleyball');
 const nunjucks = require('nunjucks');
 const routes = require('./routes');
+const bodyParser = require('body-parser');
+
 
 const app = express();
 app.use(volleyball); // DEBUGGING
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json());
 
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);

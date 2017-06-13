@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/ev-dev/twitter-js#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "chalk": "^1.1.3",
     "express": "^4.15.3",
     "lodash": "^4.17.4",

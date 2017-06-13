@@ -4,7 +4,8 @@ const randomPuppy = require('random-puppy');
 let data = [];
 
 function add(name, content, pic) {
-    data.push({ name: name, content: content, image: pic });
+    let id = Math.floor(Math.random()*100);
+    data.push({ name: name, content: content, image: pic, id: id });
 }
 
 function list() {
