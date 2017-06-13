@@ -8,7 +8,7 @@ app.listen(3003, () => {
 });
 
 app.use('/', (req, res, next) => {
-    console.log(chalk.green(req.method), chalk.blue(req.url), chalk.yellow(res.statusCode.toString()));
+    console.log(chalk.blue(req.method), req.url, chalk.green(res.statusCode.toString()));
     next();
 });
 
